@@ -1,1 +1,77 @@
-hola mundo x2
+body {
+    background-color: #b38558;
+}
+
+.header {
+    height: 90px;
+    width: 100%;
+    background-color: #fffbf7;;
+}
+
+.header > * {
+    display:inline-block;
+    vertical-align: middle;
+    height: 100%;
+    color: #252525;
+}
+
+.logo {
+    width: 15%;
+}
+
+.logo > * {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+li {
+    display:inline;
+}
+
+.menu-item{
+    margin-left: 30px;
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.navbar {
+    width: 70%;
+    text-align: center;   
+    font-size: 25px; 
+}
+
+.navbar ul {
+    margin-top:20px;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
+
+.main {
+    display: inline-block;
+    margin-left: 600px;
+    margin-top: 150px;
+}
+
+.imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen h1 {   
+    margin-top: 50px;
+    font-family: 'Cairo', sans-serif;
+    color: #252525;
+}
+
+.imagen > img {
+    object-fit: cover;
+    
+}
