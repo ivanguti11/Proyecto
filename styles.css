@@ -1,18 +1,23 @@
 .header {
-    height: 90px;
-    width: 100%;
+    height: 100px;
     background-image: url("https://neufeld.com.mx/medios/fondo-3-scaled.jpg");
-    /*background-size: contain;
+    background-size: contain;
     background-position: center;
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .header > * {
-    display:inline-block; /* pregunta*/
-    vertical-align: middle;
+    display: inline-block;
     height: 100%;
+    vertical-align: middle; /* explicar el funcionamiento para alinear el navbar*/
+    line-height: 100px;     
     color: #252525;
+}
+
+.lista {
+    margin: 0;  /* por que tienen margen y padding por defaulr */
+    padding: 0;
 }
 
 .logo {
@@ -22,7 +27,7 @@
 .logo > * {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: contain;  /* explicar otra manera de solucionar */
 }
 
 li {
@@ -32,25 +37,20 @@ li {
 .menu-item{
     margin-left: 30px;
     font-family: 'Cairo', sans-serif;
-
 }
 
 .navbar {
     width: 70%;
+    height: 100%;
     text-align: center;   
     font-size: 25px; 
 }
 
-.navbar ul {
-    margin-top:20px;
-}
-
 .fixed-header {
-    position: fixed;
+    position: fixed; /* explicar bien esta parte */
     top: 0;
     left: 0;
     right: 0;
-    background-color: #fffbf7;
 }
 
 .imagen {
@@ -58,8 +58,7 @@ li {
     background-repeat: no-repeat;
     background-size: contain;
     background-size: cover;
-    background-color: #faa;
-    padding-top:100px;
+    padding-top:150px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -68,10 +67,10 @@ li {
 
 .encabezado-img{
     height: 30%;
-    background-color: seagreen;
+    /*background-color: seagreen;
     border-width: 2px;
     border-style: solid;
-    border-color: black;
+    border-color: black;*/
     display:flex;
     align-items: center;
     justify-content: flex-start;
@@ -79,7 +78,6 @@ li {
 }
 
 .altura-img {
-    background-color: #afa;
     height: 100%;
     display:block;
 }
@@ -94,9 +92,86 @@ li {
     flex-shrink: 0;
     font-family: 'Cairo', sans-serif;
     color: #252525;
+    font-size: 46px;
+    color: #fff;
 }
 
 .imagen > img {
     object-fit: cover;
-    
+}
+
+.gallery{
+    margin-top: 30px;
+    display:grid;
+    grid-template: repeat(2, 400px) / repeat(4, 1fr);
+    grid-template-areas:
+    "uno dos tres cuatro"
+    "uno cinco seis cuatro"
+}
+
+.gallery > :nth-child(1){
+    grid-area: uno;
+    background-image: url("https://www.heladoslamichoacana.net/images/gt1.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 30px;
+}
+
+.gallery > :nth-child(2){
+    grid-area: dos;
+    background-image: url("https://www.heladoslamichoacana.net/images/4.jpg");
+    margin-left: 30px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery > :nth-child(3){
+    grid-area: tres;
+    background-image: url("https://www.heladoslamichoacana.net/images/gt5.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 30px;
+
+}
+
+.gallery > :nth-child(4){
+    grid-area: cuatro;
+    background-image: url("https://www.heladoslamichoacana.net/images/gt7.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 30px;
+}
+
+.gallery > :nth-child(5){
+    grid-area: cinco;
+    background-image: url("https://www.heladoslamichoacana.net/images/gt3.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 30px;
+}
+
+.gallery > :nth-child(6){
+    grid-area: seis;
+    display:flex;
+    background-color: rgb(230, 195, 44);
+    color: white;
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
 }
