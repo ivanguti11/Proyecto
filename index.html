@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Chilanka&family=Roboto:ital,wght@1,300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-<section class="fixed-header">
+<!--<section class="fixed-header">
     <header class="header">
         <a class="logo">
             <img src="https://www.heladoslamichoacana.net/images/Logo-Small-Hi.png" alt="logo">
@@ -27,7 +30,39 @@
             </ul>
         </nav>
     </header>
-</section>
+</section> -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-header">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="https://www.heladoslamichoacana.net/images/Logo-Small-Hi.png" alt="Michoacana" width="60"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto p-2  me-auto mb-lg-0"  style="width: 200px">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Franquicias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
     <section class="imagen">
         <section class="encabezado-img">
             <a class="altura-img">
@@ -36,6 +71,37 @@
             <h1>100% Natural</h1>
         </section>
     </section>
+<section class="productos">
+    <section class="prod-container">
+        <section class="paletas">
+            <h1>Paletas</h1>
+                <img src="https://www.heladoslamichoacana.net/images/paletas-corregido-1.jpg" width="250">
+                <p>Con más de 125 sabores y 5 categorías, nuestras famosas paletas son una explosión de sabores en tu boca.</p>
+            <button>Ver más</button>
+        </section>
+        <section class="paletas">
+            <h1>Gelatos y Nieves</h1>
+            <img src="https://www.heladoslamichoacana.net/images/c4.jpg" width="250">
+            <p>Contamos con más de 50 sabores de helado. Prueba nuestros deliciosos gelatos y siéntete como si estuvieras en Italia.</p>
+        <button>Ver más</button>        
+        </section>
+        <section class="paletas">
+            <h1>Otros Productos</h1>
+            <img src="https://www.heladoslamichoacana.net/images/c3.jpg" width="250">
+            <p>Si quieres una riquísima y económica opción, te recomendamos que pruebes nuestros bolis y todos nuestros productos.</p>
+        <button>Ver más</button>        
+    </section>
+</section>
+</section>
+<section class="fondo2">
+    <h1>Acerca de Nosotros</h1>
+    <section class="fondo2-container">
+        <h2>Todo el sabor de México en un helado</h2>
+        <p>Nos caracterizamos por nuestra gran variedad de sabores exclusivos e innovadores para paladares exigentes. La Michoacana es una marca de origen mexicano, la cual ha tenido una gran trayectoria alrededor del mundo de los helados y paletas artesanales 100%
+            naturales. Su inicio desde hace mas de 80 años ha hecho de la marca un ícono de calidad e innovación. En el salvador inició operaciones en el año del 2008, compartiendo con el pulgarcito de america toda la gastronomía mexicana en el campo de los postres congelados.</p>
+    </section>
+    <button>Conozca más</button>   
+</section>
     <section class="gallery">
         <article></article>
         <article></article>
@@ -44,5 +110,28 @@
         <article></article>
         <article> Ver Más</article>
     </section>
+<section class="boletin">
+    <section class="contactar">
+        <h1>¿Quiere contactarnos?</h1>
+        <div>
+            <h2>Envíenos sus comentarios</h1>
+            <p>Nuestro deseo es mejorar día con día lo que hacemos. Por eso queremos
+                saber de usted, para poder brindarle los mejores productos y la mejor 
+                experiencia posible. Póngase en contacto con nosotros.</p>
+        </div>
+        <button>Contacto</button>
+    </section>
+    <section class="grupo">
+        <h1>Solo para un grupo selecto</h1>
+        <div>
+            <h2>RECIBA NUESTRO BOLETÍN</h1>
+            <input type="text" placeholder="Ingrese su nombre"/>
+            <input type="email" placeholder="Ingrese su correo"/>
+        </div>
+        <button>Suscríbeme</button>
+    </section>
+</section>
+<footer class="footer">La Michoacana © 2022 Derechos Reservados.
+</footer>
 </body>
 </html>
