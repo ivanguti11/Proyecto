@@ -428,14 +428,52 @@ li {
     }
     .paletas{
         margin-bottom: 320px;
+        text-align: center;
+    }
+    .paletas > img {
+        margin-left: 0;
+    }
+    .paletas > button {
+        margin-left: 0;
     }
     .paletas2{
         margin-top: 150px;
         margin-bottom: 330px;
+        margin-left: 30px;
+        text-align: center;
+    }
+    .paletas2 > img {
+        margin-left: 0;
+        margin-right: 50px;
+    }
+    .paletas2 > p {
+        margin-left: 0;
+        margin-right: 60px;
+    }
+    .paletas2 > button {
+        margin-left: 0;
+        margin-right: 60px;
     }
     .paletas3{
         margin-top: 150px;
         margin-bottom: 1500px;
+        margin-left: 30px;
+        text-align: center;
+    }
+    .paletas3 > img {
+        margin-left: 0;
+        margin-right: 60px;
+    }
+    .paletas3 > h1{
+        margin-right: 60px;
+    }
+    .paletas3 > p {
+        margin-right: 60px;
+        margin-left: 0;
+    }
+    .paletas3 > button {
+        margin-right: 60px;
+        margin-left: 0;
     }
     .fondo2 h1{
     padding-top: 120px;
